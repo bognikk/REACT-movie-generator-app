@@ -1,0 +1,52 @@
+.control {
+	margin: 1rem 0;
+
+	&.invalid {
+		label {
+			color: salmon;
+		}
+
+		input,
+		textarea {
+			border-color: salmon;
+			background-color: salmon;
+
+			&:focus {
+				border-color: salmon;
+				background-color: salmon;
+				outline-color: salmon;
+			}
+
+			&:focus-visible {
+				outline-color: salmon !important;
+			}
+		}
+	}
+
+	label {
+		display: block;
+		margin-bottom: 0.5rem;
+		font-weight: 700;
+		text-align: left;
+	}
+
+	input,
+	textarea {
+		display: block;
+		max-width: 100%;
+		width: 100%;
+		// margin: 0.5rem 0;
+		padding: 0.5rem;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		color: #000;
+		font: inherit;
+
+		&:focus,
+		&:focus {
+			border-color: #eaba6b;
+			background-color: lighten(#eaba6b, 10%);
+			outline-color: #eaba6b;
+		}
+	}
+}
